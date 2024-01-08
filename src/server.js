@@ -3,7 +3,7 @@ const app = express();
 const dotenv = require("dotenv");
 dotenv.config();
 
-const port = process.env.port || 3000;
+const port = process.env.port || 3004;
 const files = require("./modules/files.module/routes");
 const cors = require('cors');
 const { receiveMessage } = require("./modules/rabbit/receive");
