@@ -10,6 +10,7 @@ const create = async (req, res) => {
           data: { result: request },
         });
       } catch (e) {
+        console.log(e);
         res.status(400).send({ error: e.message, data: {} });
       }
 }
